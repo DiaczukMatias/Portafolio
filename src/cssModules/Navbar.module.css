@@ -5,7 +5,7 @@
   background-color: #333;
   padding: 5px 25px;
   border-radius: 0 10px 0 10px;
-  z-index: 1; /* Asegura que la Navbar esté por encima de otros elementos */
+  z-index: 1;
   border-bottom: 1px solid #444;
   border-left: 1px solid #444;
 }
@@ -31,10 +31,10 @@
 }
 
 .separator {
-  width: 1px; /* Ancho de la línea */
-  height: 15px; /* Ajusta la altura según lo necesario */
-  background-color: white; /* Color de la línea */
-  border: none; /* Elimina el borde predeterminado */
+  width: 1px;
+  height: 15px;
+  background-color: white;
+  border: none;
   margin: 0 10px 5px;
 }
 

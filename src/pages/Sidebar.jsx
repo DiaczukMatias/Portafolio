@@ -16,7 +16,7 @@ function Sidebar() {
         alt="Avatar"
         className={styles.avatar}
       />
-      |<div className={styles.separator}></div>
+      <div className={styles.separator}></div>
       <h2>Matias Diaczuk</h2>
       <p>Web Developer</p>
       <ul className={styles.contactInfo}>

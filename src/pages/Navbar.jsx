@@ -13,8 +13,8 @@ const Navbar = ({ sections, handleRender }) => {
                 <a
                   href={`#${section.id}`}
                   onClick={(e) => {
-                    e.preventDefault(); // Prevenir el comportamiento predeterminado del enlace
-                    handleRender(section.id); // Llamar a la función con el id de la sección
+                    e.preventDefault();
+                    handleRender(section.id);
                   }}
                 >
                   {section.name}

@@ -20,8 +20,8 @@
 
 .proyectCard:hover {
   background-color: #f0da5f;
-  transform: scale(1.1); /* Aumenta la tarjeta al pasar el mouse */
-  box-shadow: 0 4px 4px #f0da5f; /* Agrega una sombra al pasar el mouse */
+  transform: scale(1.1);
+  box-shadow: 0 4px 4px #f0da5f;
   transition: transform 0.3s ease-in-out;
 }
 
