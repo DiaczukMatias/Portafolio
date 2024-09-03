@@ -1,0 +1,19 @@
+.Container {
+  background-color: 222222;
+  padding: 30px;
+}
+
+.p {
+  color: #a0a0a0;
+}
+
+.h1 {
+  margin-bottom: 30px;
+}
+
+.separator {
+  height: 1px; /* Altura de la línea */
+  background-color: #555; /* Color de la línea, ajusta según lo desees */
+  margin-top: 90px; /* Centra la línea horizontalmente y añade espacio alrededor */
+  opacity: 0.7; /* Hace que la línea sea más discreta */
+}

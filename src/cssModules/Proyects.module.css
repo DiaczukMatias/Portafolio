@@ -1,0 +1,32 @@
+.container {
+  padding: 30px;
+}
+
+.proyects {
+  display: flex;
+  flex-wrap: wrap; /* Permite que las tarjetas se envuelvan en la línea siguiente si no hay suficiente espacio */
+  gap: 100px; /* Espaciado entre las tarjetas */
+  justify-content: center; /* Centra las tarjetas horizontalmente */
+}
+
+.proyectCard {
+  margin-top: 20px;
+  margin-right: 70px;
+  padding: 0.5px;
+  max-width: 400px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.proyectCard:hover {
+  background-color: #f0da5f;
+  transform: scale(1.1); /* Aumenta la tarjeta al pasar el mouse */
+  box-shadow: 0 4px 4px #f0da5f; /* Agrega una sombra al pasar el mouse */
+  transition: transform 0.3s ease-in-out;
+}
+
+.proyectImage {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}

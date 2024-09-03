@@ -1,0 +1,52 @@
+.navbar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #333;
+  padding: 5px 25px;
+  border-radius: 0 10px 0 10px;
+  z-index: 1; /* Asegura que la Navbar esté por encima de otros elementos */
+  border-bottom: 1px solid #444;
+  border-left: 1px solid #444;
+}
+
+.navbar-left ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  gap: 20px;
+}
+
+.navbar-left li a {
+  font-weight: 550;
+  padding: 40px;
+  text-decoration: none;
+  color: inherit;
+  font-family: "Poppins", sans-serif;
+  transition: color 0.3s ease;
+}
+
+.navbar-left li a:hover {
+  color: #f0da5f;
+}
+
+.separator {
+  width: 1px; /* Ancho de la línea */
+  height: 15px; /* Ajusta la altura según lo necesario */
+  background-color: white; /* Color de la línea */
+  border: none; /* Elimina el borde predeterminado */
+  margin: 0 10px 5px;
+}
+
+.CV a {
+  font-weight: 550;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-family: "Poppins", sans-serif;
+  transition: color 0.3s ease;
+}
+
+.CV a:hover {
+  color: #f0da5f;
+}
