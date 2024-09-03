@@ -12,8 +12,8 @@
 }
 
 .separator {
-  height: 1px; /* Altura de la línea */
-  background-color: #555; /* Color de la línea, ajusta según lo desees */
-  margin-top: 90px; /* Centra la línea horizontalmente y añade espacio alrededor */
-  opacity: 0.7; /* Hace que la línea sea más discreta */
+  height: 1px; 
+  background-color: #555; 
+  margin-top: 90px; 
+  opacity: 0.7; 
 }

@@ -1,10 +1,10 @@
 /* Footer.module.css */
 .footer {
-  background-color: #222; /* Color de fondo oscuro */
-  color: #fff; /* Color de texto blanco para contraste */
-  padding: 20px 0; /* Espacio arriba y abajo */
-  text-align: center; /* Centra el texto y los iconos */
-  border-top: 1px solid #444; /* Línea superior para separación */
+  background-color: #222;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  border-top: 1px solid #444;
   border-left: 1px solid #444;
   border-right: 1px solid #444;
   margin-left: 120px;
@@ -14,31 +14,31 @@
 
 .footer-content {
   display: flex;
-  flex-direction: column; /* Coloca el contenido en columna */
-  align-items: center; /* Centra horizontalmente el contenido */
+  flex-direction: column;
+  align-items: center;
 }
 
 .footer-content p {
-  margin: 0; /* Elimina margen predeterminado */
-  font-family: "Poppins", sans-serif; /* Fuente moderna */
-  font-size: 14px; /* Tamaño de fuente adecuado */
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
 }
 
 .social-icons {
-  margin-top: 10px; /* Espacio arriba de los iconos sociales */
+  margin-top: 10px;
 }
 
 .social-icons a {
-  color: #fff; /* Color blanco para los iconos */
-  font-size: 20px; /* Tamaño de los iconos */
-  margin: 0 10px; /* Espacio horizontal entre los iconos */
-  transition: color 0.3s ease; /* Transición suave para el cambio de color */
+  color: #fff;
+  font-size: 20px;
+  margin: 0 10px;
+  transition: color 0.3s ease;
 }
 
 .social-icons a:hover {
-  color: #f0da5f; /* Color amarillo al pasar el mouse */
+  color: #f0da5f;
 }
 
 .social-icons i {
-  display: inline-block; /* Asegura que los iconos se alineen correctamente */
+  display: inline-block;
 }

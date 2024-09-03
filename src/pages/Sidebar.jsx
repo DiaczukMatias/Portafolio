@@ -8,7 +8,6 @@ import {
   faMapMarkerAlt,
 } from "@fortawesome/free-solid-svg-icons";
 
-
 function Sidebar() {
   return (
     <div className={styles.container}>
@@ -17,13 +16,11 @@ function Sidebar() {
         alt="Avatar"
         className={styles.avatar}
       />
-      <div className={styles.separator}></div>
+      |<div className={styles.separator}></div>
       <h2>Matias Diaczuk</h2>
-      <p>Web Developer & Designer</p>
+      <p>Web Developer</p>
       <ul className={styles.contactInfo}>
         <li>
-          
-
           <FontAwesomeIcon icon={faEnvelope} className={styles.icon} />
           <div className={styles.textWrapper}>
             <strong>Email</strong>
