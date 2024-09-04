@@ -40,7 +40,7 @@ const Contact = () => {
 
   return (
     <div className={styles.container}>
-      <h1>Contact</h1>
+      <h1>Contacto</h1>
       <form ref={formRef} onSubmit={handleSubmit} className={styles.form}>
         <label>
           From Name:

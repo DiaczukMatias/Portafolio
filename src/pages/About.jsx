@@ -4,7 +4,7 @@ import styles from "../cssModules/About.module.css";
 function About() {
   return (
     <div className={styles.Container}>
-      <h1 className={styles.h1}>About Me</h1>
+      <h1 className={styles.h1}>Sobre Mi</h1>
       <p className={styles.p}>
         Soy un desarrollador web con un fuerte enfoque en el frontend. Me
         apasiona crear interfaces de usuario intuitivas y visualmente atractivas
