@@ -24,14 +24,14 @@ function Sidebar() {
           <FontAwesomeIcon icon={faEnvelope} className={styles.icon} />
           <div className={styles.textWrapper}>
             <strong>Email</strong>
-            <span>example@mail.com</span>
+            <span>diaczukm@mail.com</span>
           </div>
         </li>
         <li>
           <FontAwesomeIcon icon={faPhone} className={styles.icon} />
           <div className={styles.textWrapper}>
             <strong>Phone</strong>
-            <span>+123 456 7890</span>
+            <span>+54 1131397638</span>
           </div>
         </li>
         <li>

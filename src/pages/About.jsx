@@ -8,9 +8,13 @@ function About() {
       <p className={styles.p}>
         Soy un desarrollador web con un fuerte enfoque en el frontend. Me
         apasiona crear interfaces de usuario intuitivas y visualmente atractivas
-        que ofrezcan una excelente experiencia al usuario. Actualmente, estoy
+        que ofrecerán una excelente experiencia al usuario. Actualmente, estoy
         finalizando mis estudios en SoyHenry, donde me estoy especializando en
-        desarrollo FullStack.
+        desarrollo FullStack. He desarrollado proyectos que me han permitido
+        aplicar y fortalecer mis conocimientos en diversas tecnologías, como
+        JavaScript, TypeScript, React, Redux, Material UI y Bootstrap. Además,
+        tengo nociones de desarrollo backend utilizando Express, MongoDB y
+        PostgreSQL.
         <p>
           Mi objetivo es combinar mis habilidades en diseño y programación para
           desarrollar aplicaciones web robustas y eficientes. Estoy comprometido
