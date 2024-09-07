@@ -1,4 +1,4 @@
-.container {
+/* .container {
   display: flex;
   background-color: #222222;
   color: #ffffff;
@@ -43,4 +43,114 @@ p {
   gap: 10px;
   min-height: 50vh;
   padding: 20px;
+} */
+
+.container {
+  display: flex;
+  background-color: #222222;
+  color: #ffffff;
+  border-radius: 20px;
+  width: 66.5%;
+  padding: 50px;
+  position: relative;
+  border: 1px solid #444;
+}
+
+.mainContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+.All {
+  display: flex;
+  gap: 10px;
+  min-height: 50vh;
+  padding: 20px;
+}
+
+/* Media Query para pantallas medianas */
+@media (max-width: 1024px) {
+  .container {
+    width: 80%;
+    padding: 40px;
+  }
+
+  .All {
+    gap: 5px;
+    padding: 15px;
+  }
+}
+
+/* Media Query para pantallas pequeñas */
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    padding: 30px;
+  }
+
+  .mainContent {
+    gap: 30px;
+  }
+
+  .All {
+    gap: 4px;
+    padding: 10px;
+    flex-direction: column;
+  }
+}
+
+/* Media Query para pantallas muy pequeñas */
+@media (max-width: 480px) {
+  .container {
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .mainContent {
+    gap: 20px;
+  }
+
+  .All {
+    gap: 3px;
+    padding: 5px;
+    flex-direction: column;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 0.875rem;
+  }
 }

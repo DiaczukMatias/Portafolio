@@ -1,3 +1,87 @@
+/* .container {
+  background-color: #222222;
+  color: #fff;
+  width: 300px;
+  padding: 20px;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  margin-right: 20px;
+  border-radius: 10px;
+  text-align: center;
+  margin-left: 100px;
+  border-left: 1px solid #444;
+  border-right: 1px solid #444;
+  border-bottom: 1px solid #444;
+  border-top: 1px solid #444;
+}
+
+.avatar {
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto 10px;
+}
+
+.separator {
+  width: 80%;
+  height: 1px;
+  background-color: #555;
+  margin: 30px auto;
+  opacity: 0.7;
+}
+
+.contactInfo {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.contactInfo ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contactInfo li {
+  margin-left: 40px;
+  margin-top: 30px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+.icon {
+  margin-right: 10px;
+  font-size: 18px;
+  color: #fff;
+}
+
+.textWrapper {
+  text-align: left;
+}
+
+.textWrapper strong {
+  display: block;
+  font-size: 18px;
+  color: #a0a0a0;
+}
+
+.textWrapper span {
+  font-size: 16px;
+}
+
+.contactInfo li svg {
+  color: #f0db4f;
+  font-size: 25px; 
+} */
+
 .container {
   background-color: #222222;
   color: #fff;
@@ -80,4 +164,95 @@
 .contactInfo li svg {
   color: #f0db4f;
   font-size: 25px; /* Amarillo */
+}
+
+/* Media Query para pantallas medianas */
+@media (max-width: 1024px) {
+  .container {
+    width: 250px;
+    margin-left: 50px;
+  }
+
+  .contactInfo {
+    gap: 40px;
+  }
+
+  .contactInfo li {
+    margin-left: 30px;
+    font-size: 24px;
+  }
+
+  .textWrapper strong {
+    font-size: 16px;
+  }
+
+  .textWrapper span {
+    font-size: 14px;
+  }
+}
+
+/* Media Query para pantallas pequeñas */
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    margin: 0;
+    border: none;
+  }
+
+  .contactInfo {
+    gap: 30px;
+  }
+
+  .contactInfo ul {
+    gap: 5px;
+  }
+
+  .contactInfo li {
+    margin-left: 20px;
+    font-size: 20px;
+  }
+
+  .textWrapper strong {
+    font-size: 14px;
+  }
+
+  .textWrapper span {
+    font-size: 12px;
+  }
+}
+
+/* Media Query para pantallas muy pequeñas */
+@media (max-width: 480px) {
+  .container {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    text-align: left;
+  }
+
+  .avatar {
+    width: 80px;
+    height: 80px;
+  }
+
+  .separator {
+    width: 60%;
+  }
+
+  .contactInfo {
+    gap: 20px;
+  }
+
+  .contactInfo li {
+    margin-left: 10px;
+    font-size: 18px;
+  }
+
+  .textWrapper strong {
+    font-size: 12px;
+  }
+
+  .textWrapper span {
+    font-size: 10px;
+  }
 }

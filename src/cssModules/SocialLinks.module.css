@@ -1,3 +1,29 @@
+/* .container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 550px;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 110px;
+  height: 110px;
+  background-color: #f0da5f;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+  color: #2c2c2c;
+  font-size: 30px;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  background-color: #2c2c2c;
+  color: #f0da5f;
+  box-shadow: 0 0 15px #ffd900;
+} */
+
 .container {
   display: flex;
   justify-content: space-around;
@@ -22,4 +48,47 @@
   background-color: #2c2c2c;
   color: #f0da5f;
   box-shadow: 0 0 15px #ffd900;
+}
+
+/* Media Query para pantallas medianas */
+@media (max-width: 1024px) {
+  .container {
+    margin-top: 400px;
+    flex-wrap: wrap; /* Permite que las tarjetas se envuelvan en varias filas */
+    gap: 20px; /* Espaciado entre las tarjetas */
+  }
+
+  .card {
+    width: 90px;
+    height: 90px;
+    font-size: 24px;
+  }
+}
+
+/* Media Query para pantallas pequeñas */
+@media (max-width: 768px) {
+  .container {
+    margin-top: 300px;
+    flex-direction: column; /* Apila las tarjetas en una columna */
+    align-items: center; /* Centra las tarjetas horizontalmente */
+  }
+
+  .card {
+    width: 80px;
+    height: 80px;
+    font-size: 20px;
+  }
+}
+
+/* Media Query para pantallas muy pequeñas */
+@media (max-width: 480px) {
+  .container {
+    margin-top: 200px;
+  }
+
+  .card {
+    width: 70px;
+    height: 70px;
+    font-size: 18px;
+  }
 }
