@@ -18,7 +18,7 @@ const Proyects = () => {
       title: "Proyect 2",
       description: "Description of proyect 2",
       imageUrl: MyProyect2,
-      link: "https://ricky-morty-theta.vercel.app/",
+      link: "https://proyecto-m3-p22y.vercel.app/",
     },
     {
       id: 3,
