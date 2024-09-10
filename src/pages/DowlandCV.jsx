@@ -1,9 +1,9 @@
 import React from "react";
-import CV2 from "../images/CV2.pdf";
+import CV3 from "../images/CV3.pdf";
 
 const DownloadCV = () => {
   return (
-    <a href={CV2} download>
+    <a href={CV3} download>
       Descargar CV
     </a>
   );
