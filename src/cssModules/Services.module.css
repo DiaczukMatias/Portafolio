@@ -1,96 +1,3 @@
-/* .services {
-  padding: 20px;
-  background-color: #222222;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  gap: 20px;
-}
-
-.service {
-  background-color: rgb(27, 27, 27);
-  border-radius: 20px;
-  color: #fff;
-  padding: 30px;
-  text-align: center;
-  width: 200px;
-  transition: transform 0.3s ease-in-out;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  height: 250px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease-in-out;
-  animation: borderGlow 3s infinite;
-}
-
-.service h3 {
-  margin-bottom: 10px;
-  font-size: 18px;
-  transition: color 0.5s ease;
-}
-
-.service p {
-  font-size: 14px;
-  color: #ccc;
-}
-
-.service:hover {
-  transform: scale(1.05);
-}
-
-.h2 {
-  margin-left: 30px;
-}
-
-.logo {
-  width: 80px;
-  height: 80px;
-  margin-bottom: 10px;
-  object-fit: contain;
-}
-
-@keyframes borderGlow {
-  0% {
-    border-color: #00ccff;
-    box-shadow: 0 0 5px #3cd8ff;
-  }
-  25% {
-    border-color: #ffcc00;
-    box-shadow: 0 0 5px #ffcc00;
-  }
-  50% {
-    border-color: #51dcff;
-    box-shadow: 0 0 5px #00ccff;
-  }
-  75% {
-    border-color: #ffcc00;
-    box-shadow: 0 0 5px #ffcc00;
-  }
-  100% {
-    border-color: #00ccff;
-    box-shadow: 0 0 5px #00ccff;
-  }
-}
-
-.js:hover h3 {
-  color: #f0db4f;
-}
-
-.react:hover h3 {
-  color: #61dafb;
-}
-
-.redux:hover h3 {
-  color: #764abc;
-}
-
-.ts:hover h3 {
-  color: #3178c6;
-} */
-
 .services {
   padding: 20px;
   background-color: #222222;
@@ -184,39 +91,52 @@
   color: #3178c6; /* Azul */
 }
 
-/* Media Query para pantallas medianas */
-@media (max-width: 1024px) {
-  .service {
-    width: 180px;
-    height: 230px;
-    padding: 20px;
-  }
-}
-
-/* Media Query para pantallas pequeñas */
+/* Estilos generales para pantallas pequeñas (móviles) */
 @media (max-width: 768px) {
-  .service {
-    width: 150px;
-    height: 200px;
-    padding: 15px;
-  }
-
   .services {
-    gap: 15px;
+    padding: 10px;
+    flex-direction: column; /* Cambia a una columna para pantallas pequeñas */
+    align-items: center; /* Centra los elementos */
+    gap: 10px; /* Reduce el espacio entre servicios */
   }
-}
 
-/* Media Query para pantallas muy pequeñas */
-@media (max-width: 480px) {
   .service {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-    padding: 10px;
+    width: 100%; /* Asegura que cada servicio ocupe todo el ancho disponible */
+    max-width: 300px; /* Establece un ancho máximo para que no se estire demasiado */
+    height: auto; /* Permite que la altura se ajuste automáticamente */
+    padding: 20px; /* Reduce el padding para que se ajuste mejor en pantallas pequeñas */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Reduce el box-shadow para pantallas pequeñas */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   }
 
-  .services {
-    gap: 10px;
-    padding: 10px;
+  .service h3 {
+    font-size: 16px; /* Reduce el tamaño del texto del encabezado */
+  }
+
+  .service p {
+    font-size: 12px; /* Reduce el tamaño del texto del párrafo */
+  }
+
+  .logo {
+    width: 60px; /* Reduce el tamaño del logo */
+    height: 60px; /* Reduce el tamaño del logo */
+    margin-bottom: 5px; /* Reduce el margen inferior del logo */
+  }
+
+  /* Ajusta los colores de texto cuando se hace hover en dispositivos móviles */
+  .js:hover h3 {
+    color: #f0db4f; /* Amarillo */
+  }
+
+  .react:hover h3 {
+    color: #61dafb; /* Celeste */
+  }
+
+  .redux:hover h3 {
+    color: #764abc; /* Violeta */
+  }
+
+  .ts:hover h3 {
+    color: #3178c6; /* Azul */
   }
 }

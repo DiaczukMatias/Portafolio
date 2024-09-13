@@ -1,36 +1,3 @@
-/* .container {
-  padding: 30px;
-}
-
-.proyects {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 100px;
-  justify-content: center;
-}
-
-.proyectCard {
-  margin-top: 20px;
-  margin-right: 70px;
-  padding: 0.5px;
-  max-width: 400px;
-  text-align: center;
-  border-radius: 20px;
-}
-
-.proyectCard:hover {
-  background-color: #f0da5f;
-  transform: scale(1.1);
-  box-shadow: 0 4px 4px #f0da5f;
-  transition: transform 0.3s ease-in-out;
-}
-
-.proyectImage {
-  width: 100%;
-  height: 100%;
-  border-radius: 20px;
-} */
-
 .container {
   padding: 30px;
 }
@@ -64,39 +31,39 @@
   border-radius: 20px;
 }
 
-/* Media Query para pantallas medianas */
-@media (max-width: 1024px) {
-  .proyects {
-    gap: 50px;
-  }
-
-  .proyectCard {
-    margin-right: 30px;
-    max-width: 300px;
-  }
-}
-
-/* Media Query para pantallas pequeñas */
+/* Estilos generales para pantallas pequeñas (móviles) */
 @media (max-width: 768px) {
-  .proyects {
-    gap: 30px;
+  .container {
+    padding: 20px;
   }
 
-  .proyectCard {
-    margin-right: 20px;
-    max-width: 250px;
-  }
-}
-
-/* Media Query para pantallas muy pequeñas */
-@media (max-width: 480px) {
   .proyects {
+    flex-direction: column;
     gap: 20px;
-    padding: 10px;
+    justify-content: center;
   }
 
   .proyectCard {
-    margin-right: 0;
-    max-width: 100%;
+    margin-top: 10px;
+    margin-right: 0; /* Eliminamos el margen derecho ya que las tarjetas estarán apiladas */
+    padding: 0;
+    max-width: 100%; /* Ocupa todo el ancho disponible */
+    text-align: center;
+    border-radius: 10px; /* Reducimos el border-radius para pantallas pequeñas */
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .proyectCard:hover {
+    background-color: #f0da5f;
+    transform: scale(
+      1.05
+    ); /* Reducimos el scale para que no se desborde en pantallas pequeñas */
+    box-shadow: 0 2px 2px #f0da5f; /* Reducimos el box-shadow para pantallas pequeñas */
+  }
+
+  .proyectImage {
+    width: 100%;
+    height: auto; /* Asegura que la imagen no se estire */
+    border-radius: 10px; /* Reducimos el border-radius para pantallas pequeñas */
   }
 }
