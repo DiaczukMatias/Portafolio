@@ -32,11 +32,7 @@
 }
 
 .separator {
-  width: 1px;
-  height: 15px;
-  background-color: white;
-  border: none;
-  margin: 0 10px 5px;
+  display: none;
 }
 
 .CV a {
@@ -51,10 +47,6 @@
 .CV a:hover {
   color: #f0da5f;
 }
-/* Estilo del botón de menú hamburguesa */
-.navbar-toggle {
-  display: none; /* Ocultarlo por defecto en pantallas grandes */
-}
 
 /* Mostrar el botón de menú hamburguesa en pantallas pequeñas */
 @media (max-width: 768px) {
@@ -65,9 +57,8 @@
   .navbar-left ul {
     display: none;
     flex-direction: column;
-    position: absolute;
-    top: 50px;
-    right: 0;
+    position: -ms-page;
+    top: 20px;
     background-color: #333;
     width: 100%;
     padding: 10px;
