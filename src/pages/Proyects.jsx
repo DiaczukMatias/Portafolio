@@ -2,7 +2,6 @@ import React from "react";
 import styles from "../cssModules/Proyects.module.css";
 import MyProyect from "../images/myProyect.jpeg";
 import MyProyect2 from "../images/myProyect2.jpeg";
-import MyProyect3 from "../images/myProyect3.jpeg";
 
 const Proyects = () => {
   const proyects = [
@@ -11,7 +10,7 @@ const Proyects = () => {
       title: "Proyect 1",
       description: "Description of proyect 1",
       imageUrl: MyProyect,
-      link: "https://ricky-morty-theta.vercel.app/",
+      link: "https://ricky-morty-fij7w1ysb-matias-projects-446819e4.vercel.app/",
     },
     {
       id: 2,
@@ -19,13 +18,6 @@ const Proyects = () => {
       description: "Description of proyect 2",
       imageUrl: MyProyect2,
       link: "https://proyecto-m3-p22y.vercel.app/",
-    },
-    {
-      id: 3,
-      title: "Proyect 3",
-      description: "Description of proyect 3",
-      imageUrl: MyProyect3,
-      link: "https://ricky-morty-theta.vercel.app/",
     },
   ];
 
