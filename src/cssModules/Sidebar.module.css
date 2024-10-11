@@ -82,58 +82,8 @@
   font-size: 25px; /* Amarillo */
 }
 
-/* Estilos generales para pantallas pequeñas (móviles) */
 @media (max-width: 768px) {
   .container {
-    width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible en pantallas pequeñas */
-    margin: 0; /* Elimina los márgenes laterales */
-    border-radius: 0; /* Elimina el radio del borde para pantallas pequeñas */
-    padding: 15px; /* Reduce el padding para ajustarse mejor en pantallas pequeñas */
-    border: none; /* Elimina los bordes para un diseño más limpio en móviles */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Añade una sombra ligera para un efecto de elevación */
-  }
-
-  .avatar {
-    width: 100px; /* Ajusta el tamaño del avatar para que no ocupe demasiado espacio */
-    height: 100px; /* Ajusta el tamaño del avatar */
-  }
-
-  .separator {
-    width: 60%; /* Ajusta el ancho del separador para pantallas pequeñas */
-    margin: 20px auto; /* Reduce el margen para que el separador se ajuste mejor */
-  }
-
-  .contactInfo {
-    gap: 20px; /* Reduce el espacio entre los elementos de contacto */
-  }
-
-  .contactInfo ul {
-    gap: 5px; /* Reduce el espacio entre los elementos de la lista */
-  }
-
-  .contactInfo li {
-    margin-left: 0; /* Elimina el margen izquierdo */
-    margin-top: 15px; /* Ajusta el margen superior */
-    font-size: 22px; /* Reduce el tamaño de la fuente para pantallas pequeñas */
-  }
-
-  .icon {
-    font-size: 20px; /* Ajusta el tamaño del ícono */
-  }
-
-  .textWrapper {
-    text-align: center; /* Centra el texto en pantallas pequeñas */
-  }
-
-  .textWrapper strong {
-    font-size: 16px; /* Reduce el tamaño de la fuente del texto en negrita */
-  }
-
-  .textWrapper span {
-    font-size: 14px; /* Reduce el tamaño de la fuente del texto normal */
-  }
-
-  .contactInfo li svg {
-    font-size: 20px; /* Ajusta el tamaño del ícono SVG para que se adapte a pantallas pequeñas */
+    display: none;
   }
 }
