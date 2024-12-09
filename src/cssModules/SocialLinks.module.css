@@ -24,21 +24,21 @@
   box-shadow: 0 0 15px #ffd900;
 }
 
-/* Estilos generales para pantallas móviles */
 @media (max-width: 768px) {
   .container {
-    flex-direction: column; /* Cambia la dirección de flexión a columna en pantallas pequeñas */
-    align-items: center; /* Alinea los elementos al centro */
-    margin-top: 50px; /* Ajusta el margen superior para que no quede tan arriba en pantallas pequeñas */
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 50px;
   }
 
   .card {
-    width: 80px; /* Reduce el ancho de las tarjetas */
-    height: 80px; /* Reduce la altura de las tarjetas */
-    font-size: 24px; /* Reduce el tamaño de la fuente */
+    width: 80px;
+    height: 80px;
+    font-size: 24px;
   }
 
   .card:hover {
-    box-shadow: 0 0 10px #ffd900; /* Ajusta el tamaño de la sombra para pantallas pequeñas */
+    box-shadow: 0 0 10px #ffd900;
   }
 }

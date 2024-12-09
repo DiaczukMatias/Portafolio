@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "../cssModules/Proyects.module.css";
 import MyProyect from "../images/myProyect.jpeg";
-import MyProyect2 from "../images/myProyect2.jpeg";
+import forgefit from "../images/forgefit.png";
 
 const Proyects = () => {
   const proyects = [
@@ -13,11 +13,11 @@ const Proyects = () => {
       link: "https://ricky-morty-fij7w1ysb-matias-projects-446819e4.vercel.app/",
     },
     {
-      id: 2,
-      title: "Proyect 2",
-      description: "Description of proyect 2",
-      imageUrl: MyProyect2,
-      link: "https://proyecto-m3-p22y.vercel.app/",
+      id: 1,
+      title: "Proyect 1",
+      description: "Description of proyect 1",
+      imageUrl: forgefit,
+      link: "https://pf-webgym-qv6r.vercel.app/",
     },
   ];
 

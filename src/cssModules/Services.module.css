@@ -95,48 +95,43 @@
 @media (max-width: 768px) {
   .services {
     padding: 10px;
-    flex-direction: column; /* Cambia a una columna para pantallas pequeñas */
-    align-items: center; /* Centra los elementos */
-    gap: 10px; /* Reduce el espacio entre servicios */
+    display: grid; /* Cambia a un diseño de grid */
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+    gap: 10px; /* Espaciado entre las cards */
   }
 
   .service {
-    width: 100%; /* Asegura que cada servicio ocupe todo el ancho disponible */
-    max-width: 300px; /* Establece un ancho máximo para que no se estire demasiado */
-    height: auto; /* Permite que la altura se ajuste automáticamente */
-    padding: 20px; /* Reduce el padding para que se ajuste mejor en pantallas pequeñas */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Reduce el box-shadow para pantallas pequeñas */
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    width: 100%; /* Ocupa todo el espacio de la columna */
+    max-width: 150px; /* Tamaño máximo de la card */
+    height: auto; /* Ajusta la altura automáticamente */
+    padding: 15px; /* Ajusta el padding */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Reduce el box-shadow */
+    text-align: center; /* Asegura que todo quede centrado */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
   }
 
   .service h3 {
-    font-size: 16px; /* Reduce el tamaño del texto del encabezado */
+    font-size: 14px; /* Reduce el tamaño del encabezado */
+    margin-bottom: 5px;
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+    overflow: hidden; /* Oculta el texto que sobrepasa */
+    text-overflow: ellipsis; /* Agrega "..." al final si el texto es muy largo */
   }
 
   .service p {
     font-size: 12px; /* Reduce el tamaño del texto del párrafo */
+    color: #ccc;
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+    overflow: hidden; /* Oculta el texto que sobrepasa */
+    text-overflow: ellipsis; /* Agrega "..." al final si el texto es muy largo */
   }
 
   .logo {
-    width: 60px; /* Reduce el tamaño del logo */
-    height: 60px; /* Reduce el tamaño del logo */
-    margin-bottom: 5px; /* Reduce el margen inferior del logo */
-  }
-
-  /* Ajusta los colores de texto cuando se hace hover en dispositivos móviles */
-  .js:hover h3 {
-    color: #f0db4f; /* Amarillo */
-  }
-
-  .react:hover h3 {
-    color: #61dafb; /* Celeste */
-  }
-
-  .redux:hover h3 {
-    color: #764abc; /* Violeta */
-  }
-
-  .ts:hover h3 {
-    color: #3178c6; /* Azul */
+    width: 50px; /* Reduce el tamaño del logo */
+    height: 50px;
+    margin-bottom: 5px;
   }
 }

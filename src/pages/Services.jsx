@@ -15,10 +15,6 @@ function Services() {
             className={styles.logo}
           />
           <h3>Javascript</h3>
-          <p>
-            The core language of the web, enabling dynamic content and
-            interactivity.
-          </p>
         </div>
         <div className={`${styles.service} ${styles.react}`}>
           <img
@@ -27,10 +23,6 @@ function Services() {
             className={styles.logo}
           />
           <h3>React</h3>
-          <p>
-            A powerful library for building fast and interactive user
-            interfaces.
-          </p>
         </div>
         <div className={`${styles.service} ${styles.redux}`}>
           <img
@@ -39,10 +31,6 @@ function Services() {
             className={styles.logo}
           />
           <h3>Redux</h3>
-          <p>
-            State management tool, maintaining predictable states in large
-            applications.
-          </p>
         </div>
         <div className={`${styles.service} ${styles.ts}`}>
           <img
@@ -51,9 +39,6 @@ function Services() {
             className={styles.logo}
           />
           <h3>Typescript</h3>
-          <p>
-            A strongly typed programming language that builds on JavaScript.
-          </p>
         </div>
       </div>
     </>
