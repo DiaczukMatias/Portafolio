@@ -2,6 +2,7 @@ import React from "react";
 import styles from "../cssModules/Proyects.module.css";
 import MyProyect from "../images/myProyect.jpeg";
 import forgefit from "../images/forgefit.png";
+import STARRRLIINK from "../images/STARRRLIINK.png";
 
 const Proyects = () => {
   const proyects = [
@@ -18,6 +19,13 @@ const Proyects = () => {
       description: "Description of proyect 1",
       imageUrl: forgefit,
       link: "https://pf-webgym-qv6r.vercel.app/",
+    },
+    {
+      id: 1,
+      title: "Proyect 1",
+      description: "Description of proyect 1",
+      imageUrl: STARRRLIINK,
+      link: "https://lnkd.in/d3kxQvy8",
     },
   ];
 
