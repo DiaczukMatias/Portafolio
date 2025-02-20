@@ -36,57 +36,43 @@
 }
 
 .cardTitle {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
 }
 
 .cardDescription {
   font-size: 1rem;
   opacity: 0.8;
   color: #bdbdbd;
+  margin-bottom: 20px;
 }
 
-/* Estilos generales para pantallas pequeñas (móviles) */
+.icon {
+  font-size: 2rem; /* Tamaño del icono más grande */
+  color: #e7ce40;
+  margin-right: 8%;
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 @media (max-width: 768px) {
-  .services {
-    padding: 10px;
-    display: grid; /* Cambia a un diseño de grid */
-    grid-template-columns: repeat(2, 1fr); /* 2 columnas */
-    gap: 10px; /* Espaciado entre las cards */
+  .cardsContainer {
+    grid-template-columns: 1fr; /* Cambia a una sola columna */
+    padding: 0 10px; /* Añade un pequeño margen a los lados para evitar que las cartas se desborden */
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
   }
 
-  .service {
-    width: 100%; /* Ocupa todo el espacio de la columna */
-    max-width: 150px; /* Tamaño máximo de la card */
-    height: auto; /* Ajusta la altura automáticamente */
-    padding: 15px; /* Ajusta el padding */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Reduce el box-shadow */
-    text-align: center; /* Asegura que todo quede centrado */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+  .card {
+    width: 90%; /* Asegura que las cartas ocupen todo el ancho disponible */
+    height: auto; /* Ajusta la altura para que no se recorte el contenido */
   }
 
-  .service h3 {
-    font-size: 14px; /* Reduce el tamaño del encabezado */
-    margin-bottom: 5px;
-    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
-    overflow: hidden; /* Oculta el texto que sobrepasa */
-    text-overflow: ellipsis; /* Agrega "..." al final si el texto es muy largo */
-  }
-
-  .service p {
-    font-size: 12px; /* Reduce el tamaño del texto del párrafo */
-    color: #ccc;
-    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
-    overflow: hidden; /* Oculta el texto que sobrepasa */
-    text-overflow: ellipsis; /* Agrega "..." al final si el texto es muy largo */
-  }
-
-  .logo {
-    width: 50px; /* Reduce el tamaño del logo */
-    height: 50px;
-    margin-bottom: 5px;
+  .title {
+    white-space: nowrap;
+    margin-left: 25%; /* Evita que el texto se divida en dos líneas */
   }
 }

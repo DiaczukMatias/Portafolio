@@ -2,12 +2,13 @@
   display: flex;
   background-color: #1d1d1d;
   color: #ffffff;
-  border-radius: 20px;
+  border-radius: 30px;
   width: 45%;
   padding: 30px;
   position: relative;
   border: 1px solid #444;
   margin-top: 2%;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5), 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 .mainContent {
@@ -44,23 +45,45 @@ p {
   padding: 20px;
 }
 
-/* Estilos generales para pantallas pequeñas (móviles) */
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
+  /* Ajustes para el contenedor principal */
   .container {
-    flex-direction: column;
-    width: 90%;
-    padding: 20px;
-    border-radius: 10px;
-  }
-
-  .mainContent {
-    gap: 20px;
-  }
-
-  .All {
-    flex-direction: column;
-    gap: 15px;
-    min-height: auto;
+    width: 100%; /* Ajustamos el ancho para que ocupe más espacio en pantallas pequeñas */
     padding: 10px;
+    margin: 0 auto; /* Aplica margen automático a los lados para centrar el contenedor */
+  }
+
+  /* Ajustes para la sección principal */
+  .mainContent {
+    gap: 5px;
+    /* Reducimos el espacio entre los elementos */
+  }
+
+  /* Ajustes para el sidebar */
+  .All {
+    margin-top: 20px;
+    padding: 10px;
+    margin-right: 25px;
+    flex-direction: column; /* Colocamos el Sidebar y el contenido uno debajo del otro */
+    gap: 12px; /* Aumentamos el espacio entre el Sidebar y el contenido */
+  }
+
+  /* Estilos para los textos */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 1.2em; /* Reducimos el tamaño de los encabezados */
+  }
+
+  p {
+    font-size: 0.9em; /* Reducimos el tamaño del texto del párrafo */
+  }
+
+  /* Aseguramos que los elementos dentro de .mainContent se alineen correctamente */
+  .mainContent > div {
+    margin: 10px 0;
   }
 }

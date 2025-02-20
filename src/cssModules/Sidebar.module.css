@@ -7,7 +7,8 @@
   box-sizing: border-box;
   flex-shrink: 0;
   margin-right: 20px;
-  border-radius: 10px;
+  border-radius: 30px;
+
   text-align: center;
   margin-left: 15%;
   border-left: 1px solid #444;
@@ -17,7 +18,7 @@
 }
 
 .avatar {
-  border-radius: 10px;
+  border-radius: 20px;
   display: block;
   margin: 0 auto 10px;
 }
@@ -50,7 +51,6 @@
 
 .contactInfo li {
   margin-left: 10px;
-  margin-top: 15px;
   padding: 5px;
   display: flex;
   align-items: center;
@@ -59,9 +59,8 @@
 }
 
 .icon {
-  margin-right: 8px;
-  font-size: 16px;
-  color: #fff;
+  margin-right: 30px;
+  font-size: 20px;
 }
 
 .textWrapper {
@@ -71,7 +70,7 @@
 .textWrapper strong {
   display: block;
   font-size: 16px;
-  color: #a0a0a0;
+  color: #818181;
 }
 
 .textWrapper span {
@@ -83,8 +82,100 @@
   font-size: 18px;
 }
 
-@media (max-width: 768px) {
+.name {
+  font-size: 30px;
+}
+
+.dev {
+  font-size: 14px;
+}
+@media screen and (max-width: 768px) {
   .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 102%; /* Ocupa casi todo el ancho de la pantalla */
+    margin-left: 10px;
+    padding: 5px;
+    background-color: #1d1d1d;
+    border-radius: 20px; /* Reducido el radio para hacerlo más pequeño */
+    overflow: hidden;
+    position: relative;
+    margin-top: 8%;
+  }
+
+  /* Imagen en el lado izquierdo */
+  .avatar {
+    width: 70px;
+    height: 90px;
+    border-radius: 20%;
+    margin-right: 15px; /* Ajustamos el margen para evitar mucho espacio */
+  }
+
+  /* Información (nombre y rol) en el lado izquierdo */
+  .name,
+  .dev {
+    text-align: left; /* Aseguramos que el texto esté alineado a la izquierda */
+  }
+
+  .name {
+    font-size: 18px;
+  }
+
+  .dev {
+    font-size: 13px;
+    color: #b4b4b4;
+  }
+
+  /* Ajustamos el contenedor de la información (nombre y rol) para que quede en una fila */
+  .container > div {
+    display: flex;
+    flex-direction: column; /* Alineamos verticalmente el nombre y el rol */
+    justify-content: center; /* Aseguramos que estén centrados */
+    flex-grow: 1;
+  }
+
+  @media screen and (max-width: 768px) {
+  }
+
+  /* Se oculta la información adicional al principio */
+  .contactInfo {
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  /* Cuando la flecha se presiona, se muestra la información adicional */
+  .container.open .contactInfo {
+    display: flex;
+  }
+
+  .contactInfo li {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+  }
+
+  .iconContainer {
+    margin-right: 15px;
+  }
+
+  .textWrapper {
+    text-align: left;
+    font-size: 14px;
+  }
+
+  .textWrapper strong {
+    font-size: 16px;
+    color: #818181;
+  }
+
+  .textWrapper span {
+    font-size: 14px;
+  }
+
+  /* Ocultar el separador en pantallas pequeñas */
+  .separator {
     display: none;
   }
 }

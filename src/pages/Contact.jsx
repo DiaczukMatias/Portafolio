@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 import { init, sendForm } from "@emailjs/browser";
 import styles from "../cssModules/Contact.module.css";
+import Map from "./Map";
 
 init("J2KD1AxhHThQjutM5");
 
@@ -29,7 +30,7 @@ const Contact = () => {
       formRef.current,
       "J2KD1AxhHThQjutM5"
     )
-      .then((result) => {
+      .then(() => {
         alert("¡Mensaje enviado con éxito!");
       })
       .catch((error) => {
@@ -40,39 +41,42 @@ const Contact = () => {
 
   return (
     <div className={styles.container}>
-      <h1>Contacto</h1>
+      <h1 className={styles.title}>Contact</h1>
+      <div className={styles.mapWrapper}>
+        <Map />
+      </div>
+
       <form ref={formRef} onSubmit={handleSubmit} className={styles.form}>
-        <label>
-          From Name:
+        <div className={styles.row}>
           <input
             type="text"
             name="from_name"
             value={formData.from_name}
             onChange={handleChange}
+            placeholder="Name"
             required
             autoComplete="off"
+            className={styles.inputName}
           />
-        </label>
-        <label>
-          Email:
           <input
             type="email"
             name="user_email"
             value={formData.user_email}
             onChange={handleChange}
+            placeholder="Email"
             required
             autoComplete="off"
+            className={styles.inputEmail}
           />
-        </label>
-        <label>
-          Message:
-          <textarea
-            name="mensaje"
-            value={formData.mensaje}
-            onChange={handleChange}
-            required
-          />
-        </label>
+        </div>
+        <textarea
+          name="mensaje"
+          value={formData.mensaje}
+          onChange={handleChange}
+          placeholder="Message"
+          required
+          className={styles.textarea}
+        />
         <button type="submit">Send</button>
       </form>
     </div>

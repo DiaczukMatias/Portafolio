@@ -4,9 +4,15 @@ import DowlandCV from "./DowlandCV";
 
 const Navbar = ({ sections, handleRender }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [selectedSection, setSelectedSection] = useState("about"); // Estado para la sección seleccionada
 
   const handleToggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+  };
+
+  const handleSectionClick = (id) => {
+    setSelectedSection(id); // Actualizamos la sección seleccionada
+    handleRender(id); // Llamamos a la función handleRender pasada como props
   };
 
   return (
@@ -28,9 +34,11 @@ const Navbar = ({ sections, handleRender }) => {
                   href={`#${section.id}`}
                   onClick={(e) => {
                     e.preventDefault();
-                    handleRender(section.id);
-                    setIsMenuOpen(false);
+                    handleSectionClick(section.id); // Llamamos a la función que actualiza el estado
                   }}
+                  className={
+                    selectedSection === section.id ? styles.selected : ""
+                  } // Establecemos el estilo si es la sección seleccionada
                 >
                   {section.name}
                 </a>

@@ -14,7 +14,7 @@ function Home() {
   const sections = [
     { name: "About", id: "about" },
     { name: "Proyects", id: "proyects" },
-    { name: "Contacto", id: "contact" },
+    { name: "Contact", id: "contact" },
   ];
 
   const handleRender = (id) => {

@@ -1,93 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
 .container {
   display: flex;
-  padding: 30px;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
 
-label {
-  margin-top: 10px;
-  display: block;
-  margin-bottom: 10px;
-  font-weight: bold;
-  color: #f1f1f1;
+.title {
+  margin-right: 80%;
+}
+
+.mapWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
 }
 
 .form {
-  margin-top: 80px;
-  position: absolute;
-  margin-left: 0;
-  padding: 5px;
+  margin-right: 3%;
+  position: relative;
+  width: 100%;
+  max-width: 800px;
 }
 
-input[type="text"],
-input[type="email"],
-textarea {
+.row {
+  display: flex;
+  gap: 20px;
+  width: 103.5%;
+}
+
+.row input {
+  flex: 1;
+  width: 100%;
+}
+
+/* Estilos para cada input y textarea */
+.inputName,
+.inputEmail,
+.textarea {
   margin-top: 10px;
-  width: 190%;
+  width: 100%;
   padding: 15px;
-  margin-bottom: 20px;
-  border: 1px solid #444;
+  border-bottom: 1px solid #444;
+  border-left: 1px solid #444;
+  border-top: 1px solid #444;
+  border-right: 1px solid #444;
   border-radius: 10px;
-  background-color: #3a3a3a;
+  background-color: #1d1d1d;
   color: #f1f1f1;
-  font-size: 16px;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif; /* Fuente Poppins */
 }
 
-input[type="text"]:focus,
-input[type="email"]:focus,
-textarea:focus {
-  border-color: #f0da5f;
+.inputName::placeholder,
+.inputEmail::placeholder,
+.textarea::placeholder {
+  font-family: "Poppins", sans-serif; /* Aplica Poppins al placeholder */
+  color: #a1a1a1; /* Color gris tenue para mayor estética */
+}
+
+.inputName:focus,
+.inputEmail:focus,
+.textarea:focus {
+  border-color: #e7ce40;
   outline: none;
 }
 
 button {
-  width: 50%;
+  width: 20%;
   padding: 10px;
-  background-color: #f0da5f;
+  background-color: #e7ce40;
   border: none;
-  border-radius: 4px;
+  border-radius: 10px;
   color: #2c2c2c;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: bold;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  margin-top: 20px;
 }
 
 button:hover {
   background-color: #2c2c2c;
-  color: #f0da5f;
-  box-shadow: 0 0 15px #ffd900;
+  color: #e7ce40;
+  box-shadow: 0 0 15px #e7ce40;
 }
 
-textarea {
+.textarea {
   resize: vertical;
-  min-height: 100px;
+  min-height: 80px;
+  margin-top: 20px;
 }
 
-/* Estilos generales para pantallas pequeñas (móviles) */
-@media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-    padding: 15px;
+/* Estilos existentes */
+
+/* Media Queries */
+@media (max-width: 1024px) {
+  .title {
+    margin-right: 50%; /* Ajusta el margen del título para pantallas medianas */
+  }
+
+  .row {
+    flex-direction: column; /* Los inputs estarán en columna en pantallas más pequeñas */
+    gap: 15px;
   }
 
   .form {
-    margin-top: 20px;
-    position: relative;
-    margin-left: 0;
-    padding: 10px;
+    margin-right: 5%;
+    width: 90%; /* El formulario ocupará el 90% del ancho en pantallas medianas */
   }
 
-  input[type="text"],
-  input[type="email"],
-  textarea {
-    width: 100%;
-    padding: 12px;
+  .mapWrapper {
     margin-bottom: 15px;
   }
 
   button {
+    width: 40%; /* Botón más grande en pantallas medianas */
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    margin-right: 20%; /* Ajusta el margen del título aún más para pantallas pequeñas */
+  }
+
+  .row {
     width: 100%;
+    flex-direction: column; /* Los inputs estarán en columna en pantallas más pequeñas */
+    gap: 10px;
+  }
+
+  .form {
+    margin-right: 30px;
+    width: 85%; /* El formulario ocupará el 100% del ancho */
+  }
+
+  .mapWrapper {
+    margin-bottom: 20px;
+  }
+
+  button {
+    margin-left: 60px;
+
+    width: 50%; /* Ajusta el ancho del botón en pantallas más pequeñas */
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 22px; /* Ajusta el tamaño de fuente del título */
+    text-align: center; /* Centra el título en pantallas más pequeñas */
+    margin-right: 0;
+  }
+
+  .inputName,
+  .inputEmail,
+  .textarea {
     padding: 12px;
-    font-size: 14px;
+    font-size: 16px; /* Reduce el tamaño de fuente de los inputs y textarea */
+  }
+
+  button {
+    width: 70%; /* Aumenta el ancho del botón en pantallas pequeñas */
+    font-size: 16px; /* Reduce el tamaño de fuente del botón */
   }
 }

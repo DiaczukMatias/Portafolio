@@ -1,6 +1,6 @@
 .Container {
   background-color: #1d1d1d;
-  margin-left: 3%;
+  margin-left: 2%;
 }
 
 .p {
@@ -9,16 +9,17 @@
 
 @media (max-width: 768px) {
   .Container {
-    padding: 20px;
+    margin-right: 2%;
   }
 
   .p {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.5;
+    padding: 15px;
   }
 
   .h1 {
-    font-size: 24px;
-    margin-bottom: 20px;
+    font-size: 28px;
+    margin-left: 20px;
   }
 }
