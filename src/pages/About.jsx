@@ -4,27 +4,19 @@ import styles from "../cssModules/About.module.css";
 function About() {
   return (
     <div className={styles.Container}>
-      <h1 className={styles.h1}>Sobre Mi</h1>
+      <h1 className={styles.h1}>Sobre mí</h1>
       <p className={styles.p}>
-        Soy un desarrollador web con un fuerte enfoque en el frontend. Me
-        apasiona crear interfaces de usuario intuitivas y visualmente atractivas
-        que ofrecerán una excelente experiencia al usuario. Actualmente, estoy
-        finalizando mis estudios en SoyHenry, donde me estoy especializando en
-        desarrollo FullStack. He desarrollado proyectos que me han permitido
-        aplicar y fortalecer mis conocimientos en diversas tecnologías, como
-        JavaScript, TypeScript, React, Redux, Material UI y Bootstrap. Además,
-        tengo nociones de desarrollo backend utilizando Express, MongoDB y
-        PostgreSQL.
+        Soy un desarrollador FullStack certificado, con un fuerte enfoque en
+        frontend 🎨💻. Me apasiona crear interfaces intuitivas y atractivas,
+        brindando experiencias de usuario de alto nivel 🚀. Tengo experiencia
+        con JavaScript, TypeScript, React, React Native, Redux, Expo, Material
+        UI y Bootstrap, además de conocimientos en backend con Express, MongoDB
+        y PostgreSQL 🛠️.
         <p>
-          Mi objetivo es combinar mis habilidades en diseño y programación para
-          desarrollar aplicaciones web robustas y eficientes. Estoy comprometido
-          con el aprendizaje continuo y la mejora constante de mis habilidades
-          para mantenerme al día con las últimas tendencias tecnológicas. Soy
-          una persona proactiva, con gran capacidad para trabajar en equipo y
-          cumplir con los plazos establecidos. Mi disponibilidad horaria es
-          amplia y me adapto fácilmente a nuevos desafíos. Estoy comprometido
-          con el aprendizaje continuo y me mantengo actualizado sobre las
-          últimas tendencias tecnológicas."
+          Me encanta fusionar diseño y programación para desarrollar
+          aplicaciones modernas y eficientes. Siempre busco aprender y mejorar,
+          me adapto rápido a nuevos desafíos y disfruto trabajar en equipo 🤝.
+          ¡Listo para nuevos proyectos! 🚀
         </p>
       </p>
       <div className={styles.separator}></div>

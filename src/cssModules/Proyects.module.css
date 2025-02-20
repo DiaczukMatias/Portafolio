@@ -1,69 +1,52 @@
 .container {
-  padding: 30px;
+  padding: 20px;
 }
 
 .proyects {
   display: flex;
   flex-wrap: wrap;
-  gap: 100px;
+  gap: 50px; /* Se redujo el espacio entre proyectos */
   justify-content: center;
 }
 
 .proyectCard {
-  margin-top: 20px;
-  margin-right: 70px;
-  padding: 0.5px;
-  max-width: 400px;
+  padding: 7px;
+  max-width: 350px;
   text-align: center;
-  border-radius: 20px;
+  border-radius: 15px;
   transition: transform 0.3s ease-in-out;
 }
 
 .proyectCard:hover {
-  background-color: #f0da5f;
-  transform: scale(1.1);
-  box-shadow: 0 4px 4px #f0da5f;
+  transform: scale(1.05);
 }
 
 .proyectImage {
   width: 100%;
-  height: 100%;
-  border-radius: 20px;
+  height: auto;
+  border-radius: 15px;
+  border: 2px solid #f0da5f; /* Borde amarillo delgado */
 }
 
-/* Estilos generales para pantallas pequeñas (móviles) */
-@media (max-width: 768px) {
-  .container {
-    padding: 20px;
-  }
+.description {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #bdbdbd;
+}
 
+/* Responsive para móviles */
+@media (max-width: 768px) {
   .proyects {
     flex-direction: column;
     gap: 20px;
-    justify-content: center;
   }
 
   .proyectCard {
-    margin-top: 10px;
-    margin-right: 0; /* Eliminamos el margen derecho ya que las tarjetas estarán apiladas */
-    padding: 0;
-    max-width: 100%; /* Ocupa todo el ancho disponible */
-    text-align: center;
-    border-radius: 10px; /* Reducimos el border-radius para pantallas pequeñas */
-    transition: transform 0.3s ease-in-out;
+    max-width: 100%;
   }
 
-  .proyectCard:hover {
-    background-color: #f0da5f;
-    transform: scale(
-      1.05
-    ); /* Reducimos el scale para que no se desborde en pantallas pequeñas */
-    box-shadow: 0 2px 2px #f0da5f; /* Reducimos el box-shadow para pantallas pequeñas */
-  }
-
-  .proyectImage {
-    width: 100%;
-    height: auto; /* Asegura que la imagen no se estire */
-    border-radius: 10px; /* Reducimos el border-radius para pantallas pequeñas */
+  .description {
+    font-size: 12px;
   }
 }

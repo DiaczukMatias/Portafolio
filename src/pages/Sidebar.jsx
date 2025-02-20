@@ -18,7 +18,7 @@ function Sidebar() {
       />
       <div className={styles.separator}></div>
       <h2>Matias Diaczuk</h2>
-      <p>Web Developer</p>
+      <p>Front-end Developer</p>
       <ul className={styles.contactInfo}>
         <li>
           <FontAwesomeIcon icon={faEnvelope} className={styles.icon} />

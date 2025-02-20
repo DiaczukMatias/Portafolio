@@ -3,45 +3,39 @@ import styles from "../cssModules/Services.module.css";
 
 function Services() {
   return (
-    <>
-      <div>
-        <h2 className={styles.h2}>My Technologies</h2>
-      </div>
-      <div className={styles.services}>
-        <div className={`${styles.service} ${styles.js}`}>
-          <img
-            src="https://th.bing.com/th/id/OIP.Y4VPmWW2m4_V2WFYOEGYRgHaHa?w=178&h=180&c=7&r=0&o=5&pid=1.7"
-            alt="JavaScript Logo"
-            className={styles.logo}
-          />
-          <h3>Javascript</h3>
+    <div className={styles.container}>
+      <h3 className={styles.title}>My Techs</h3>
+      <div className={styles.cardsContainer}>
+        <div className={styles.card}>
+          <h3>Solicitudes a Backend</h3>
+          <p className={styles.cardDescription}>
+            Implementación eficiente de fetch/axios para consumir APIs y manejar
+            datos dinámicos.
+          </p>
         </div>
-        <div className={`${styles.service} ${styles.react}`}>
-          <img
-            src="https://th.bing.com/th/id/R.f81a6f373c244b1f70f4b7402b5ab372?rik=rbXh4ieLuKt%2bmA&riu=http%3a%2f%2flogos-download.com%2fwp-content%2fuploads%2f2016%2f09%2fReact_logo_logotype_emblem.png&ehk=QhGOkKcUKCU7FBQgHOajOiJqJBACUTD2Ni6LsfqzCEA%3d&risl=&pid=ImgRaw&r=0"
-            alt="React Logo"
-            className={styles.logo}
-          />
-          <h3>React</h3>
+        <div className={styles.card}>
+          <h3>Diseño Moderno y Maquetación</h3>
+          <p className={styles.cardDescription}>
+            Creación de interfaces atractivas y funcionales con un enfoque en
+            UX/UI.
+          </p>
         </div>
-        <div className={`${styles.service} ${styles.redux}`}>
-          <img
-            src="https://th.bing.com/th/id/R.8251fe76d7487a28b07603515b300964?rik=H7lrBp652zDaWg&riu=http%3a%2f%2fassets.stickpng.com%2fimages%2f5848309bcef1014c0b5e4a9a.png&ehk=N%2fi7UuvK4YyoLcxusdDEWeftPaGIfNJl2VmpTOtLt%2bA%3d&risl=&pid=ImgRaw&r=0"
-            alt="Redux Logo"
-            className={styles.logo}
-          />
-          <h3>Redux</h3>
+        <div className={styles.card}>
+          <h3>Código Tipado y Reutilizable</h3>
+          <p className={styles.cardDescription}>
+            Desarrollo modular y mantenimiento de código limpio con TypeScript y
+            buenas prácticas.
+          </p>
         </div>
-        <div className={`${styles.service} ${styles.ts}`}>
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1200px-Typescript_logo_2020.svg.png"
-            alt="Typescript Logo"
-            className={styles.logo}
-          />
-          <h3>Typescript</h3>
+        <div className={styles.card}>
+          <h3>Creación de Formularios y Validaciones</h3>
+          <p className={styles.cardDescription}>
+            Construcción de formularios interactivos con validaciones
+            personalizadas y manejo de estados.
+          </p>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

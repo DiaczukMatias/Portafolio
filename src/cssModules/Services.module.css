@@ -1,94 +1,49 @@
-.services {
-  padding: 20px;
-  background-color: #222222;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  gap: 20px;
-}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
 
-.service {
-  background-color: rgb(27, 27, 27);
-  border-radius: 20px;
-  color: #fff;
-  padding: 30px;
-  text-align: center;
-  width: 200px;
-  transition: transform 0.3s ease-in-out;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  height: 250px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease-in-out;
-  animation: borderGlow 3s infinite;
+  text-align: center;
+  color: white;
+  font-family: "Poppins", sans-serif;
 }
 
-.service h3 {
+.title {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  margin-right: 77%;
+  margin-top: 0;
+}
+
+.cardsContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  max-width: 800px;
+  width: 100%;
+}
+
+.card {
+  background-color: #232325;
+  border-radius: 20px;
+  padding: 20px;
+  text-align: left;
+  width: 90%;
+  height: 70%;
+  border-top: 1px solid #444;
+  border-left: 1px solid #444;
+}
+
+.cardTitle {
+  font-size: 1.5rem;
   margin-bottom: 10px;
-  font-size: 18px;
-  transition: color 0.5s ease;
 }
 
-.service p {
-  font-size: 14px;
-  color: #ccc;
-}
-
-.service:hover {
-  transform: scale(1.05);
-}
-
-.h2 {
-  margin-left: 30px;
-}
-
-.logo {
-  width: 80px;
-  height: 80px;
-  margin-bottom: 10px;
-  object-fit: contain;
-}
-
-@keyframes borderGlow {
-  0% {
-    border-color: #00ccff;
-    box-shadow: 0 0 5px #3cd8ff;
-  }
-  25% {
-    border-color: #ffcc00;
-    box-shadow: 0 0 5px #ffcc00;
-  }
-  50% {
-    border-color: #51dcff;
-    box-shadow: 0 0 5px #00ccff;
-  }
-  75% {
-    border-color: #ffcc00;
-    box-shadow: 0 0 5px #ffcc00;
-  }
-  100% {
-    border-color: #00ccff;
-    box-shadow: 0 0 5px #00ccff;
-  }
-}
-
-.js:hover h3 {
-  color: #f0db4f; /* Amarillo */
-}
-
-.react:hover h3 {
-  color: #61dafb; /* Celeste */
-}
-
-.redux:hover h3 {
-  color: #764abc; /* Violeta */
-}
-
-.ts:hover h3 {
-  color: #3178c6; /* Azul */
+.cardDescription {
+  font-size: 1rem;
+  opacity: 0.8;
+  color: #bdbdbd;
 }
 
 /* Estilos generales para pantallas pequeñas (móviles) */

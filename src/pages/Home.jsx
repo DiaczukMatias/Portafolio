@@ -12,7 +12,7 @@ function Home() {
   const [render, setRender] = useState("about");
 
   const sections = [
-    { name: "Sobre mi", id: "about" },
+    { name: "About", id: "about" },
     { name: "Proyects", id: "proyects" },
     { name: "Contacto", id: "contact" },
   ];

@@ -1,23 +1,25 @@
 .container {
   display: flex;
-  background-color: #222222;
+  background-color: #1d1d1d;
   color: #ffffff;
   border-radius: 20px;
-  width: 66.5%;
-  padding: 50px;
+  width: 45%;
+  padding: 30px;
   position: relative;
   border: 1px solid #444;
+  margin-top: 2%;
 }
 
 .mainContent {
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 15px;
 }
 
 body {
   font-family: "Poppins", sans-serif;
+  background-color: #111111;
 }
 
 h1,
@@ -38,7 +40,7 @@ p {
 .All {
   display: flex;
   gap: 10px;
-  min-height: 50vh;
+
   padding: 20px;
 }
 

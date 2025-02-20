@@ -1,5 +1,6 @@
 .container {
-  background-color: #222222;
+  margin-top: 2%;
+  background-color: #1d1d1d;
   color: #fff;
   width: 300px;
   padding: 20px;
@@ -8,7 +9,7 @@
   margin-right: 20px;
   border-radius: 10px;
   text-align: center;
-  margin-left: 100px;
+  margin-left: 15%;
   border-left: 1px solid #444;
   border-right: 1px solid #444;
   border-bottom: 1px solid #444;
@@ -22,10 +23,10 @@
 }
 
 .separator {
-  width: 80%;
+  width: 70%;
   height: 1px;
   background-color: #555;
-  margin: 30px auto;
+  margin: 20px auto;
   opacity: 0.7;
 }
 
@@ -35,7 +36,7 @@
   margin: 0;
   display: flex;
   flex-direction: column;
-  gap: 60px;
+  gap: 20px;
 }
 
 .contactInfo ul {
@@ -44,22 +45,22 @@
   margin: 0;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 5px;
 }
 
 .contactInfo li {
-  margin-left: 40px;
-  margin-top: 30px;
-  padding: 10px;
+  margin-left: 10px;
+  margin-top: 15px;
+  padding: 5px;
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
-  font-size: 28px;
+  margin-bottom: 10px;
+  font-size: 20px;
 }
 
 .icon {
-  margin-right: 10px;
-  font-size: 18px;
+  margin-right: 8px;
+  font-size: 16px;
   color: #fff;
 }
 
@@ -69,17 +70,17 @@
 
 .textWrapper strong {
   display: block;
-  font-size: 18px;
+  font-size: 16px;
   color: #a0a0a0;
 }
 
 .textWrapper span {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .contactInfo li svg {
   color: #f0db4f;
-  font-size: 25px; /* Amarillo */
+  font-size: 18px;
 }
 
 @media (max-width: 768px) {

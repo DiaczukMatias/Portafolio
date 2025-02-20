@@ -1,39 +1,24 @@
 .Container {
-  background-color: #222222;
-  padding: 30px;
+  background-color: #1d1d1d;
+  margin-left: 3%;
 }
 
 .p {
-  color: #a0a0a0;
-}
-
-.h1 {
-  margin-bottom: 30px;
-}
-
-.separator {
-  height: 1px;
-  background-color: #555;
-  margin-top: 90px;
-  opacity: 0.7;
+  color: #bdbdbd;
 }
 
 @media (max-width: 768px) {
   .Container {
-    padding: 20px; /* Reducir el padding en dispositivos móviles */
+    padding: 20px;
   }
 
   .p {
-    font-size: 14px; /* Reducir el tamaño de la fuente en móviles */
-    line-height: 1.5; /* Mejorar la legibilidad en pantallas pequeñas */
+    font-size: 14px;
+    line-height: 1.5;
   }
 
   .h1 {
-    font-size: 24px; /* Reducir el tamaño del encabezado */
-    margin-bottom: 20px; /* Reducir el margen inferior */
-  }
-
-  .separator {
-    margin-top: 50px; /* Reducir el margen superior en dispositivos móviles */
+    font-size: 24px;
+    margin-bottom: 20px;
   }
 }
