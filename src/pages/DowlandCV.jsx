@@ -4,7 +4,7 @@ import CV3 from "../images/CV3.pdf";
 const DownloadCV = () => {
   return (
     <a href={CV3} download>
-      Dowland CV
+      Download CV
     </a>
   );
 };
